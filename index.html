@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Projeto</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<div class="container">
+    <div class="menu">
+        <img src="img/—Pngtree—user avatar login interface abstract_6796239.png" alt="Ícone">
+        <p>Juliana Pires</p>
+        <ul>
+            <li><a href="#home">Início</a></li>
+            <li><a href="tasks.html">Tarefas Pendentes</a></li>
+            <li><a href="#about">Tarefas concluidas</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <h1>Lista de Tarefas</h1>
+        <div class="tasks">
+            <div class="task-list" id="dayTasks">
+                <h2>Dia</h2>
+                <ol id="dayTasksList">
+                    <!-- Tarefas do dia serão adicionadas aqui dinamicamente -->
+                </ol>
+            </div>
+            <div class="line-divider"></div>
+            <div class="task-list" id="nightTasks">
+                <h2>Noite</h2>
+                <ol id="nightTasksList">
+                    <!-- Tarefas da noite serão adicionadas aqui dinamicamente -->
+                </ol>
+            </div>
+        </div>
+        <div class="add-task">
+            <input type="text" id="taskInput" placeholder="Adicionar nova tarefa">
+            <select id="taskTime">
+                <option value="day">Dia</option>
+                <option value="night">Noite</option>
+            </select>
+            <button onclick="addTask()">Adicionar</button>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

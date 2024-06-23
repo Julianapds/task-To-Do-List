@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefas Concluídas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff; /* Azul claro */
+            color: #333; /* Cor do texto */
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .content {
+            background-color: #fff; /* Branco */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 50%;
+        }
+
+        .tasks h2 {
+            color: #1e90ff; /* Azul */
+            border-bottom: 2px solid #1e90ff; /* Linha azul */
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+
+        .tasks ul {
+            padding-left: 20px;
+        }
+
+        .tasks ul li {
+            margin-bottom: 10px;
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .tasks ul li:before {
+            content: "\f058"; /* Ícone de tarefa do Font Awesome */
+            font-family: "Font Awesome 5 Free";
+            margin-right: 10px;
+            color: #1e90ff; /* Azul */
+        }
+
+        .btn-home {
+            display: block;
+            margin: 10px auto;
+            padding: 6px 12px;
+            background-color: #1e90ff; /* Azul */
+            color: #fff; /* Texto branco */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 12px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            float: right;
+        }
+
+        .btn-home:hover {
+            background-color: #0066cc; /* Azul mais escuro */
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+<div class="container">
+    <div class="content">
+        <h1>Tarefas Concluídas</h1>
+        <div class="tasks">
+            <h2>Tarefas Concluídas</h2>
+            <ul>
+                <li>Tarefa 1 - Concluída</li>
+                <li>Tarefa 2 - Concluída</li>
+                <li>Tarefa 3 - Concluída</li>
+                <!-- Adicione mais tarefas concluídas conforme necessário -->
+            </ul>
+        </div>
+        <a href="index.html" class="btn-home">Voltar</a>
+    </div>
+</div>
+</body>
+</html>
